@@ -11,10 +11,16 @@ The following commands are available:
 * `ant prepare` – Downloads dependencies. It's not normally necessary to explicitly run this task.
 * `ant clean` – Deletes all generated files.
 
-"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-    "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai",
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "explorer.confirmDelete": false,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+"version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\serve",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
